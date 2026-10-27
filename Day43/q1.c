@@ -1,0 +1,31 @@
+/*
+ * Name : Manasvi
+ * Roll : 590041297
+ * Day : 43 Question: 1
+ * Date : 28-10-2026
+ *
+ * PROBLEM STATEMENT:
+ * Reverse a string.
+ */
+#include <stdio.h>
+int main()
+{
+char str[100];
+int i = 0, length = 0;
+printf("Enter a string: ");
+fgets(str, sizeof(str), stdin);
+while(str[length] != '\0')
+{
+length++;
+}
+if(str[length - 1] == '\n')
+{
+length--;
+}
+printf("Reversed string = ");
+for(i = length - 1; i >= 0; i--)
+{
+printf("%c", str[i]);
+}
+return 0;
+}
